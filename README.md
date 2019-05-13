@@ -43,6 +43,13 @@ pip install --user poetry
 Be aware, however, that it will also install poetry's dependencies
 which might cause conflicts.
 
+To make JIRA sign in work smoothly (in the case where your jira user and computer user are different), you may need to add something like the following to your .bashrc file:
+
+```bash
+# worklogs
+export JIRA_USER="dhamill"
+```
+
 ## Updating `poetry`
 
 Updating poetry to the latest stable version is as simple as calling the `self:update` command.
